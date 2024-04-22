@@ -1,10 +1,6 @@
 import Manager.IOmanager;
 import Produktai.Produktas;
-
-import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -72,23 +68,8 @@ public class Main {
             }
 
 
-
         }
 
-
-
-
-
-
-      //  List<Produktas> listas = iOmanager.importuotiIsCSV(path);
-
-        //iOmanager.eksportuotiICSV(listas, path);
-
-      //  System.out.println(iOmanager.nuskanuotiProdukta());
-
-        //4581,Kiauliena,5.99,2023-04-20,Mėsa,Kiauliena
-
-        iOmanager.pridetiProduktaICSV(path);
     }
 
 
