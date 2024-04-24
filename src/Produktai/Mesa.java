@@ -31,7 +31,7 @@ public class Mesa extends Produktas{
 
     @Override
     public String toCSVString() {
-        return String.format("%d,%s,%f,%s,%s,%s", super.getKodas(), super.getPavadinimas(), super.getKaina() ,super.getGaliojimoData().toString(),"Mesa", this.getRusis());
+        return String.format("%d,%s,%.2f,%s,%s,%s", super.getKodas(), super.getPavadinimas(), super.getKaina() ,super.getGaliojimoData().toString(),"Mesa", this.getRusis());
     }
 
 }

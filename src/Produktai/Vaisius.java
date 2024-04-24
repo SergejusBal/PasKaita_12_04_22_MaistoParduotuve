@@ -32,6 +32,6 @@ public class Vaisius extends Produktas{
     }
     @Override
     public String toCSVString() {
-        return String.format("%d,%s,%g,%s,%s,%b", super.getKodas(), super.getPavadinimas(), super.getKaina(), super.getGaliojimoData().toString(), "Vaisius",  this.getArEkologiskas());
+        return String.format("%d,%s,%.2f,%s,%s,%b", super.getKodas(), super.getPavadinimas(), super.getKaina(), super.getGaliojimoData().toString(), "Vaisius",  this.getArEkologiskas());
     }
 }

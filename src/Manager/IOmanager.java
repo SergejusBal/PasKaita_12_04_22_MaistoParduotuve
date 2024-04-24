@@ -3,6 +3,8 @@ package Manager;
 import Produktai.*;
 
 import java.io.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.SQLOutput;
@@ -165,7 +167,9 @@ public class IOmanager implements CSVImportExport{
         System.out.println("Iveskite produkto koda:");
         produkas.setKodas(nuskanuotiIntVerte());
         System.out.println("Iveskite produkto kaina:");
-        produkas.setKaina(nuskanuotiDoubleVerte());
+        BigDecimal bigDecimal = new BigDecimal(nuskanuotiDoubleVerte());
+        bigDecimal.setScale(0,RoundingMode.UP);
+        produkas.setKaina(Double.parseDouble(bigDecimal.toString()));
         System.out.println("Iveskite produkto galiojimo laika");
         produkas.setGaliojimoData(nuslanuotiLocalDate());
 
