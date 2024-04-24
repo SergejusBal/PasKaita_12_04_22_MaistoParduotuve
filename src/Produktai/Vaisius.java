@@ -5,7 +5,9 @@ import java.time.LocalDate;
 public class Vaisius extends Produktas{
 
     private boolean arEkologiskas;
+
     public Vaisius(){}
+
     public Vaisius(int kodas, String pavadinimas, double kaina, LocalDate galiojimoData, boolean arEkologiskas) {
         super(kodas, pavadinimas, kaina, galiojimoData);
         this.arEkologiskas = arEkologiskas;

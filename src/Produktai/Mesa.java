@@ -1,6 +1,7 @@
 package Produktai;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Mesa extends Produktas{
     private String rusis;
@@ -14,6 +15,7 @@ public class Mesa extends Produktas{
     public void setRusis(String rusis) {
         this.rusis = rusis;
     }
+
     public String getRusis() {
         return rusis;
     }
@@ -31,7 +33,5 @@ public class Mesa extends Produktas{
     public String toCSVString() {
         return String.format("%d,%s,%f,%s,%s,%s", super.getKodas(), super.getPavadinimas(), super.getKaina() ,super.getGaliojimoData().toString(),"Mesa", this.getRusis());
     }
-
-
 
 }

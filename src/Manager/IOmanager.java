@@ -34,7 +34,7 @@ public class IOmanager implements CSVImportExport{
 
                 String[] lineValues = line.split(",");
 
-                if(lineValues[4].equals("Vaisius")){
+                if(lineValues[5].equalsIgnoreCase("true") || lineValues[5].equalsIgnoreCase("false")){
                     produktas = new Vaisius();
                     ((Vaisius) produktas).setArEkologiskas(Boolean.parseBoolean(lineValues[5]));
                 }

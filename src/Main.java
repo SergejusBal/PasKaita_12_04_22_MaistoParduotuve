@@ -66,12 +66,8 @@ public class Main {
                     System.out.println("Tokios operacijos nera");
                     break;
             }
-
-
         }
-
     }
-
 
     private static int nuskanuotiIntVerte(){
         int i;

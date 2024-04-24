@@ -53,7 +53,6 @@ public abstract class Produktas {
 
     public abstract String toCSVString();
 
-
     @Override
     public String toString() {
         return  "Kodas: " + kodas +
